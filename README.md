@@ -168,12 +168,6 @@ Built as a portfolio-grade Open Banking intelligence system.
 
 ---
 
-## ⭐ Final Note
-
-If you found this project useful, consider starring ⭐ the repository.
-
----
-
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
