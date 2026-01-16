@@ -8,7 +8,6 @@ from datetime import datetime, timedelta
 def forecast_balance(months_ahead=3):
     """
     Predict account balance in the future
-    Like a weather forecast, but for money!
     """
 
     print("📊 Loading transaction data...")

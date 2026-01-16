@@ -1,7 +1,3 @@
-"""
-Main Dashboard Page
-Shows overview of finances with beautiful cards
-"""
 from utils.merchant_utils import map_to_brand
 from utils.merchant_utils import normalize_merchant
 from utils.ml_models import detect_recurring_transactions
@@ -48,9 +44,7 @@ with col1:
     st.markdown("<h1 style='margin:0; color:#1e293b;'>💼 FinanceAI</h1>",
                 unsafe_allow_html=True)
 
-# =========================
-# 📅 Date Range Selector
-# =========================
+# Date Range Selector
 
 st.subheader("📅 Select Date Range")
 

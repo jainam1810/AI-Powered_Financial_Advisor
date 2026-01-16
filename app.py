@@ -1,8 +1,3 @@
-"""
-Main App Entry Point
-This is the home page with navigation to other pages
-"""
-
 import streamlit as st
 import pandas as pd
 import plotly.express as px

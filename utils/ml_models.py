@@ -1,8 +1,3 @@
-"""
-Machine Learning utilities for the Finance AI app
-Contains all the smart AI logic!
-"""
-
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta

@@ -1,7 +1,4 @@
-"""
-Forecast Page
-Predicts future balance and upcoming transactions
-"""
+
 from utils.merchant_utils import map_to_brand
 from utils.merchant_utils import normalize_merchant
 from utils.ml_models import forecast_balance_arima
@@ -41,9 +38,9 @@ df = load_data()
 st.markdown("<h1 style='margin-bottom: 2rem; color:#1e293b;'>📈 Cash Flow Forecast</h1>",
             unsafe_allow_html=True)
 
-# =========================
-# 📅 History Window Selector
-# =========================
+
+# History Window Selector
+
 
 st.subheader("📅 Select History Window")
 
@@ -250,7 +247,6 @@ recurring = detect_recurring_transactions(history_df)
 
 
 # Resolve recurring amount column safely
-# -----------------------------
 if not recurring.empty:
     if "monthly_cost" in recurring.columns:
         amount_col = "monthly_cost"

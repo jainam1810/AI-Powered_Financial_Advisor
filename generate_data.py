@@ -7,20 +7,7 @@ import random
 np.random.seed(42)
 
 
-# ✅ ADD THIS NEW FUNCTION AT THE TOP
 def add_merchant_variation(merchant_name):
-    """
-    Add realistic variations to merchant names
-    This simulates how real bank statements look!
-
-    Example:
-    'TESCO STORES' might appear as:
-    - 'TESCO STORES'
-    - 'TESCO STORES 2341'
-    - 'TESCO STORES LONDON'
-    - 'TESCOSTORES'
-    - 'tesco stores'
-    """
     variations = [
         # 40% chance: Keep original (most common)
         lambda x: x,
@@ -49,7 +36,7 @@ def add_merchant_variation(merchant_name):
         lambda x: x[:15] + "..." if len(x) > 15 else x,
     ]
 
-    # Pick a random variation
+    # Pick a random rule
     transform = random.choice(variations)
     return transform(merchant_name)
 
@@ -133,7 +120,7 @@ def generate_transactions(num_months=6):
                 # Random merchant from this category
                 merchant = random.choice(merchant_list)
 
-                # ✅ ADD THIS LINE: Apply realistic variations
+                # Apply realistic variations
                 merchant = add_merchant_variation(merchant)
 
                 # Random amount based on category
@@ -153,7 +140,7 @@ def generate_transactions(num_months=6):
                     'category': category  # In real life, we predict this!
                 })
 
-    # Create DataFrame (think of it as an Excel spreadsheet)
+    # Create DataFrame
     df = pd.DataFrame(transactions)
     df = df.sort_values('date').reset_index(drop=True)
 

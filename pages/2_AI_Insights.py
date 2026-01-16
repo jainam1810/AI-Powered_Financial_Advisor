@@ -1,8 +1,3 @@
-"""
-AI Insights Page
-Shows smart recommendations and alerts
-"""
-
 from utils.merchant_utils import normalize_merchant
 from utils.merchant_utils import map_to_brand
 from utils.ml_models import forecast_balance_arima
@@ -50,9 +45,7 @@ st.markdown("<h1 style='margin-bottom: 2rem; color:#1e293b;'>🤖 AI Insights</h
             unsafe_allow_html=True)
 st.markdown("<p style='font-size: 1.1rem; color: #64748b; margin-bottom: 2rem;'>Smart recommendations powered by machine learning</p>", unsafe_allow_html=True)
 
-# =========================
-# 📅 Date Range Selector
-# =========================
+# Date Range Selector
 
 st.subheader("📅 Select Date Range")
 
@@ -77,9 +70,7 @@ st.caption(
     f"to {end_date.strftime('%d %b %Y')}"
 )
 
-# =========================
-# 🎯 Savings Goal (USER INPUT)
-# =========================
+# Savings Goal (USER INPUT)
 
 st.markdown("<h2 style='color:#1e293b;'>🎯 Savings Goal</h2>",
             unsafe_allow_html=True)
@@ -106,10 +97,7 @@ forecast_df = forecast_balance_arima(filtered_df, days=30)
 if forecast_df is None:
     forecast_df = forecast_balance(filtered_df, days=30)
 
-
-# =========================
 # 🔮 Goal Evaluation
-# =========================
 
 goal_result = None
 

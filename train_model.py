@@ -8,10 +8,6 @@ import pickle
 
 
 def train_transaction_categorizer():
-    """
-    Train ML model to categorize transactions
-    Like teaching a child: "When you see TESCO, it's groceries"
-    """
 
     print("📚 Loading transaction data...")
     df = pd.read_csv('bank_transactions.csv')
@@ -27,8 +23,6 @@ def train_transaction_categorizer():
     y = df['category']      # What it actually is
 
     # Step 2: Split into training and testing
-    # Training = 80% (teach the model)
-    # Testing = 20% (see if it learned)
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42
     )
@@ -36,9 +30,7 @@ def train_transaction_categorizer():
     print(f"\n📖 Training on {len(X_train)} transactions")
     print(f"🧪 Testing on {len(X_test)} transactions")
 
-    # Step 3: Convert text to numbers (computers only understand numbers!)
-    # TF-IDF = "Term Frequency - Inverse Document Frequency"
-    # Fancy name for: "Which words are most important?"
+    # Step 3: Convert text to numbers
     print("\n🔤 Converting text to numbers...")
     vectorizer = TfidfVectorizer(
         max_features=100,  # Use top 100 most important words
@@ -62,7 +54,7 @@ def train_transaction_categorizer():
     print("\n📊 Detailed Performance:")
     print(classification_report(y_test, y_pred))
 
-    # Step 6: Save the model (so we can use it later)
+    # Step 6: Save the model
     print("\n💾 Saving the model...")
     with open('categorizer_model.pkl', 'wb') as f:
         pickle.dump(model, f)
