@@ -143,6 +143,9 @@ streamlit run pages/1_Dashboard.py
 
 ---
 
+### User Interface
+- https://drive.google.com/file/d/13m88EsBa5mc8n9E_KlV0PIOucQZqB_Rg/view?usp=sharing
+
 ## 🔮 Future Enhancements
 
 - Multi-bank selection
