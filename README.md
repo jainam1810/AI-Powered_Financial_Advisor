@@ -10,7 +10,7 @@ Example: If you earn £2,000 a month and spend too much on food and subscription
 
 ## Features
 
-### 🏠 Dashboard
+### Dashboard
 - **Current balance**
 - **Income & expense overview**
 - **Upcoming predicted payments**
@@ -18,7 +18,7 @@ Example: If you earn £2,000 a month and spend too much on food and subscription
 - **Recent transactions**
 - **Cash-flow alerts**
 
-### 🤖 AI Insights
+### AI Insights
 - **Savings opportunity detection**
 - **Subscription analysis (active vs unused)**
 - **Spending pattern alerts**
@@ -26,7 +26,7 @@ Example: If you earn £2,000 a month and spend too much on food and subscription
 - **Financial health score**
 - **Personalized recommendations**
 
-### 📈 Forecast
+### Forecast
 - **ARIMA-based balance forecasting**
 - **Trend fallback forecasting**
 - **Low balance alerts (£200 threshold)**
@@ -35,7 +35,7 @@ Example: If you earn £2,000 a month and spend too much on food and subscription
 
 ---
 
-## 🧠 AI & Intelligence Logic
+## AI & Intelligence Logic
 
 ### Merchant Normalization
 Cleans raw bank descriptions:
@@ -65,7 +65,7 @@ Uses:
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```
 open-banking-ml/
@@ -98,7 +98,7 @@ open-banking-ml/
 
 ---
 
-## 📊 Data Simulation
+## Data Simulation
 
 ### Open Banking–Style Transactions
 - Contactless & online payments
@@ -107,31 +107,31 @@ open-banking-ml/
 - Salary transactions
 - Realistic spending intervals
 
-**⚠️ No real bank data is used.**
+**No real bank data is used.**
 
 ---
 
-## ▶️ How to Run Locally
+## How to Run Locally
 
-### 1️⃣ Clone the Repository
+### 1️. Clone the Repository
 ```bash
 git clone https://github.com/jainam1810/financeai-open-banking.git
 cd financeai-open-banking
 ```
 
-### 2️⃣ Install Dependencies
+### 2️. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the App
+### 3️. Run the App
 ```bash
 streamlit run pages/1_Dashboard.py
 ```
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 ### Forecast Sensitivity
 - Forecasts change significantly with date range
@@ -146,7 +146,7 @@ streamlit run pages/1_Dashboard.py
 ### User Interface
 - https://drive.google.com/file/d/13m88EsBa5mc8n9E_KlV0PIOucQZqB_Rg/view?usp=sharing
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - Multi-bank selection
 - Real Open Banking API integration
@@ -159,7 +159,7 @@ For future enhancements we can use BERT / FinBERT for transaction understanding,
 
 ---
 
-## 👤 Author
+## Author
 
 **Jainam Varia**  
 Student | FinTech | Data | Machine Learning | AI
@@ -168,6 +168,6 @@ Built as a portfolio-grade Open Banking intelligence system.
 
 ---
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
