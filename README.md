@@ -8,7 +8,7 @@ Example: If you earn £2,000 a month and spend too much on food and subscription
 
 ---
 
-## 🚀 Features
+## Features
 
 ### 🏠 Dashboard
 - **Current balance**
