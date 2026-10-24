@@ -1,4 +1,4 @@
-# FinanceAI — Open Banking Personal Finance Intelligence System
+# FinanceAI - Open Banking Personal Finance Intelligence System
 
 AI-powered personal finance dashboard inspired by UK Open Banking, built using Streamlit, ML, and time-series forecasting to deliver intelligent financial insights.
 
